@@ -1,0 +1,74 @@
+[tool.poetry]
+name = "bankgraphai"
+version = "0.1.0"
+description = "Bank transaction graph analytics using Spark and Graph Neural Networks."
+authors = ["Seu Nome"]
+readme = "README.md"
+packages = [{include="app"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+pyspark = "^3.5.1"
+torch = "^2.7.0"
+torch-geometric = "^2.6.1"
+
+sentence-transformers = "^5.0.0"
+
+networkit = "^11.1"
+
+numpy = "^2.3"
+
+plotly = "^6.2"
+
+streamlit = "^1.47"
+
+hdbscan = "^0.8.40"
+
+python-louvain = "^0.16"
+
+igraph = "^0.11"
+
+leidenalg = "^0.10"
+
+pyarrow = "^21.0.0"
+
+pydantic = "^2.11"
+
+pyyaml = "^6.0"
+
+mlflow = "^3.1"
+
+tensorboard = "^2.20"
+
+scikit-learn = "^1.7"
+
+umap-learn = "^0.5"
+
+deltalake = "^1.1"
+
+loguru = "^0.7"
+
+[tool.poetry.group.dev.dependencies]
+
+pytest = "^8.4"
+
+black = "^25"
+
+ruff = "^0.12"
+
+mypy = "^1.17"
+
+[tool.black]
+
+line-length = 100
+
+[tool.ruff]
+
+line-length = 100
+
+[build-system]
+
+requires = ["poetry-core"]
+
+build-backend = "poetry.core.masonry.api"

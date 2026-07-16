@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+
+  bankgraphai:
+
+    build: .
+
+    container_name: bankgraphai
+
+    ports:
+
+      - "8501:8501"
+
+    volumes:
+
+      - .:/app
+
+    environment:
+
+      PYTHONUNBUFFERED: "1"

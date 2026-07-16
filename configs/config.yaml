@@ -1,0 +1,60 @@
+project:
+
+  name: BankGraphAI
+
+data:
+
+  input_path: data/
+
+  output_path: outputs/
+
+  format: auto
+
+spark:
+
+  app_name: BankGraphAI
+
+  master: local[*]
+
+  shuffle_partitions: 200
+
+training:
+
+  model: graphsage
+
+  epochs: 50
+
+  batch_size: 1024
+
+  learning_rate: 0.001
+
+  hidden_channels: 128
+
+  num_layers: 3
+
+  dropout: 0.2
+
+  mixed_precision: true
+  l
+
+graph:
+
+  neighbor_sizes:
+
+    - 15
+
+    - 10
+
+clustering:
+
+  algorithm: leiden
+
+dashboard:
+
+  host: 0.0.0.0
+
+  port: 8501
+
+logging:
+
+  level: INFO
