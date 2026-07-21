@@ -549,6 +549,6 @@ if st.session_state.page == "embeddings":
                     fig=renderer.embeddings_2d(emb.embeddings,labels=labs,method=pj,title=f"{m} ({pj})")
                     st.plotly_chart(fig,width='stretch')
                 except Exception as e: st.error(f"{m} failed: {e}"); st.info("pip install node2vec torch-geometric")
-
+##testecommit
 st.markdown("---")
 st.markdown("<div style='text-align:center;color:#888'>Plataforma Teste — Análise de Redes Financeiras</div>", unsafe_allow_html=True)
