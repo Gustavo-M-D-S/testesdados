@@ -4,7 +4,6 @@ __pycache__/
 *.pyd
 .venv/
 venv/
-.streamlit/
 .idea/
 .vscode/
 .pytest_cache/
@@ -15,7 +14,6 @@ tensorboard/
 *.ckpt
 *.pt
 *.pth
-.streamlit/
 *.log
 .env
 .csv
